@@ -12,4 +12,5 @@ ports:
 tasks:
   - init: rm -rf /home/gitpod/.sdkman/candidates/java/current
     command: sudo ln -s /home/gitpod/.sdkman/candidates/java/current /usr/lib/jvm/java-1.8.0-openjdk-amd64
+  - command: export JAVA_HOME=/home/gitpod/.sdkman/candidates/java/current
   - command: java -version
