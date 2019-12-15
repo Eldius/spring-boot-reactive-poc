@@ -10,7 +10,8 @@ ports:
 
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/44_config_start_tasks/
 tasks:
+  - init: sudo apt-get install openjdk-8-jdk
   - init: rm -rf /home/gitpod/.sdkman/candidates/java/current
     command: sudo ln -s /home/gitpod/.sdkman/candidates/java/current /usr/lib/jvm/java-1.8.0-openjdk-amd64
-  - command: export JAVA_HOME=/home/gitpod/.sdkman/candidates/java/current
+  - command: export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
   - command: java -version
