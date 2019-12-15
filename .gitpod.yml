@@ -11,6 +11,6 @@ ports:
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/44_config_start_tasks/
 tasks:
   - init: sudo apt-get install openjdk-8-jdk && sudo update-java-alternatives -s java-1.8.0-openjdk-amd64
-    command: export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
+  - command: export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
   - command: java -version
   - command: ./mvnw --version
