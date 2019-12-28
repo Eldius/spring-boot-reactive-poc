@@ -11,6 +11,5 @@ RUN sudo apt-get update \
 
 
 USER gitpod
-RUN ./mvnw clean test package
 
 USER root
